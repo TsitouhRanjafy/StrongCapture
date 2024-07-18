@@ -1,0 +1,94 @@
+body {
+  background: #242424;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 80;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body div table {
+  position: relative;
+  width: 80vw;
+  height: 40vw;
+  z-index: 90;
+}
+body div table tr td {
+  border: solid 1px white;
+  width: 20vw;
+  height: 10vw;
+}
+body div table tr td div.A, body div table tr td div.B {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 4vw;
+  margin-left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "inter", sans-serif;
+  user-select: none;
+  cursor: pointer;
+}
+body div table tr td div.A {
+  border: solid 3px blue;
+  color: blue;
+}
+body div table tr td div.B {
+  border: solid 3px red;
+  color: red;
+}
+body div table tr td.red {
+  background: rgba(250, 88, 88, 0.21);
+}
+body div table tr td.blue {
+  background: rgba(103, 103, 255, 0.2117647059);
+}
+body div table tr td.green {
+  background: rgba(106, 255, 106, 0.1882352941);
+}
+
+@media (max-width: 720px) {
+  body table {
+    width: 70vh;
+    height: 70vh;
+  }
+  body table tr td {
+    width: 20vw;
+    height: 20vw;
+  }
+  body table tr td div.A, body table tr td div.B {
+    font-size: 50px;
+  }
+}
+@media (max-width: 650px) {
+  body table {
+    width: 80vw;
+    height: 80vw;
+  }
+  body table tr td div.A, body table tr td div.B {
+    font-size: 25px;
+  }
+}
+@media (max-width: 400px) {
+  body table {
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
